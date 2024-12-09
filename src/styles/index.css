@@ -1,53 +1,39 @@
-.custom-navbar {
-    background-color: black;
-    padding: 20px 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.font {
+    font-size: 0.9em;
+    font-family: Impact, fantasy;
 }
 
-.custom-navbar .navbar-logo {
-    height: 75px;
-    transform: scale(1.10);
+.material-symbols-outlined {
+    font-size: 1.8rem;
+    margin-top: .1rem;
 }
 
-.dropdown .btn-secondary {
-    background-color: rgb(47, 65, 97); 
-    color: rgb(255, 255, 255); 
-    border: none;
-    font-weight: bold;
+.heartbtn {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    color: #f8f9fa;
+    border-color: #f8f9fa;
+    background-color: transparent;
 }
 
-.dropdown .btn-secondary:hover {
-    background-color: rgb(47, 65, 97);
+.heartbtn:hover {
+    color: #212529;
+    background-color: #f8f9fa;
+    border-color: #f8f9fa;
 }
 
-.dropdown-menu {
-    background-color: rgb(47, 65, 97); 
-    color: rgb(255, 255, 255); 
-}
-
-.favorite-count {
-    font-weight: bold;
-}
-
-.dropdown-menu .dropdown-item {
-    color: rgb(255, 255, 255);
-}
-
-.dropdown-menu .dropdown-item:hover {
-    background-color: rgb(50, 69, 94); 
-}
-
-.footer {
-    background-color: black;
-    color: white; 
-}
-
-.footer a {
-    color: rgb(0, 162, 255); 
-}
-
-.footer .fa-heart {
-    color: red;
+.heartbtn.clicked {
+    color: #212529;
+    background-color: #f8f9fa;
+    border-color: #f8f9fa;
 }
