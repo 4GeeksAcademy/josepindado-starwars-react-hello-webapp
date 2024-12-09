@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { Context } from "../store/appContext";
-import nave01 from '../../img/nave01.png'
+import starWarsLogo from '../../img/starWarsLogo.png'
 
 export const Navbar = () => {
     const { store, actions } = useContext(Context);
@@ -10,7 +10,7 @@ export const Navbar = () => {
     return (
         <nav className="custom-navbar">
             <Link to="/">
-                <img src={nave01} alt="Star Wars Logo" className="navbar-logo" />
+                <img src={starWarsLogo} alt="Star Wars Logo" className="navbar-logo" />
             </Link>
 
             <div className="dropdown ml-auto">
@@ -38,4 +38,5 @@ export const Navbar = () => {
             </div>
         </nav>
     );
+
 };
