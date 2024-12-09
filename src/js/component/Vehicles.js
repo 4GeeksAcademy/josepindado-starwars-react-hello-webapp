@@ -29,10 +29,10 @@ function Vehicles() {
   };
   
   return (
-    <div className="container-fluid py-2 mb-3 border border-warning">
-      <h2 className="text-warning">Vehicles</h2>
+    <div className="container-fluid py-2 mb-3 border border-dark border-5">
+      <h2 className="text-dark">Vehicles</h2>
       <div className='d-flex overflow-auto' style={{ whiteSpace: "nowrap" }}>
-      {combinedVehicles.length === 0 ? (<p className='text-secondary fst-italic'>Stay strong while the force is loading...</p>) :
+      {combinedVehicles.length === 0 ? (<p className='text-secondary fst-italic'>Loading...</p>) :
       combinedVehicles.map((vehicle, index) => (
         <div key={index} style={{ minWidth: "300px", marginRight: "15px" }}>
           <div className="card mb-4">
@@ -44,7 +44,7 @@ function Vehicles() {
                 <strong>Manufacturer:</strong> {vehicle.manufacturer}
               </p>
               <div className="d-flex justify-content-between">
-                <a className="btn text-dark btn btn-warning fw-bolder" onClick={() => navigate(`/VehicleDetails/${vehicle.uid}`)}>Learn more!</a>
+                <a className="btn text-light btn btn-dark fw-bolder" onClick={() => navigate(`/VehicleDetails/${vehicle.uid}`)}>Learn more!</a>
                 <button className={`heartbtn ${store.favorites.includes(vehicle.name) ? "clicked" : ""}`} onClick={() => handleClick(vehicle.name)}>♡</button>
               </div>
             </div>

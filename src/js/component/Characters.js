@@ -32,10 +32,10 @@ const Characters = () => {
   }, [store.storecharacterswithProperties,store.storecharacterswithUid]);
 
   return (
-    <div className='container-fluid py-2 mb-3 border border-warning'>
-      <h2 className="text-warning">Characters</h2>
+    <div className='container-fluid py-2 mb-3 border border-dark border-5'>
+      <h2 className="text-dark">Characters</h2>
       <div className="d-flex overflow-auto" style={{ whiteSpace: "nowrap" }}>
-        {combinedCharacters.length === 0 ? (<p className='text-secondary fst-italic'>Stay strong while the force is loading...</p>) :
+        {combinedCharacters.length === 0 ? (<p className='text-secondary fst-italic'>Loading...</p>) :
         combinedCharacters.map((character, index) => (
           <div key={index} style={{ minWidth: "300px", marginRight: "15px" }}>
             <div className="card mb-4">
@@ -43,7 +43,7 @@ const Characters = () => {
               <div className="card-body">
                 <h5 className="card-title">{character.name}</h5>
                 <p className="card-text">
-                  <strong>Gender:</strong> {character.gender}<br/>
+                  <strong>Gender: </strong> {character.gender}<br/>
                   <strong>Hair Color:</strong> {character.hair_color}<br />
                   <strong>Eye Color:</strong> {character.eye_color}<br />
                   <strong>Height:</strong> {character.height}<br />
@@ -51,7 +51,7 @@ const Characters = () => {
                 </p>
                 <div className="d-flex justify-content-between">
                   <button
-                    className="btn text-dark btn btn-warning fw-bolder"
+                    className="btn text-light btn btn-dark fw-bolder"
                     onClick={() => navigate(`/CharacterDetails/${character.uid}`)}
                   >
                     Learn more!

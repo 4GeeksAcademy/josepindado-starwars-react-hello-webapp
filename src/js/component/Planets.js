@@ -31,10 +31,10 @@ function Planets() {
 
 
   return (
-    <div className="container-fluid py-2 mb-3 border border-warning">
-      <h2 className="text-warning">Planets</h2>
+    <div className="container-fluid py-2 mb-3 border border-dark border-5">
+      <h2 className="text-dark">Planets</h2>
       <div className='d-flex overflow-auto' style={{ whiteSpace: "nowrap" }}>
-      {combinedPlanets.length === 0 ? (<p className='text-secondary fst-italic'>Stay strong while the force is loading...</p>) :
+      {combinedPlanets.length === 0 ? (<p className='text-secondary fst-italic'>Loading...</p>) :
       combinedPlanets.map((planet, index) => (
         <div key={index} style={{ minWidth: "300px", minHeight: "400px", marginRight: "15px" }}>
           <div className="card mb-4" style={{width: 400, height: 300}}>
@@ -46,7 +46,7 @@ function Planets() {
                 <strong>Population:</strong> {planet.population}
               </p>
               <div className="d-flex justify-content-between">
-                <a href="#" className="btn text-dark btn btn-warning fw-bolder" onClick={() => navigate(`/PlanetDetails/${planet.uid}`)}>Learn more!</a>
+                <a href="#" className="btn text-light btn btn-dark fw-bolder" onClick={() => navigate(`/PlanetDetails/${planet.uid}`)}>Learn more!</a>
                 <button className={`heartbtn ${store.favorites.includes(planet.name) ? "clicked" : ""}`} onClick={() => handleClick(planet.name)}>♡</button>
               </div>
             </div>
