@@ -56,7 +56,7 @@ const Characters = () => {
                   >
                     Learn more!
                   </button>
-                  <button className={`heartbtn ${store.favorites.includes(character.name) ? "clicked" : ""}`} onClick={() => handleClick(character.name)}>♡</button>
+                  <button className={`heartbtn ${store.favorites.includes(character.name) ? "clicked" : ""}`} onClick={() => handleClick(character.name)}>❤</button>
                 </div>
               </div>
             </div>

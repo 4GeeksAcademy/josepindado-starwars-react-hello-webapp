@@ -47,7 +47,7 @@ function Planets() {
               </p>
               <div className="d-flex justify-content-between">
                 <a href="#" className="btn text-light btn btn-dark fw-bolder" onClick={() => navigate(`/PlanetDetails/${planet.uid}`)}>Learn more!</a>
-                <button className={`heartbtn ${store.favorites.includes(planet.name) ? "clicked" : ""}`} onClick={() => handleClick(planet.name)}>♡</button>
+                <button className={`heartbtn ${store.favorites.includes(planet.name) ? "clicked" : ""}`} onClick={() => handleClick(planet.name)}>❤</button>
               </div>
             </div>
           </div>

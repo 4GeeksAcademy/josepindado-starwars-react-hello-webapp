@@ -45,7 +45,7 @@ function Vehicles() {
               </p>
               <div className="d-flex justify-content-between">
                 <a className="btn text-light btn btn-dark fw-bolder" onClick={() => navigate(`/VehicleDetails/${vehicle.uid}`)}>Learn more!</a>
-                <button className={`heartbtn ${store.favorites.includes(vehicle.name) ? "clicked" : ""}`} onClick={() => handleClick(vehicle.name)}>♡</button>
+                <button className={`heartbtn ${store.favorites.includes(vehicle.name) ? "clicked" : ""}`} onClick={() => handleClick(vehicle.name)}>❤</button>
               </div>
             </div>
           </div>
