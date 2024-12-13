@@ -34,7 +34,7 @@ function Planets() {
       <div className='d-flex overflow-auto' style={{ whiteSpace: "nowrap" }}>
       {combinedPlanets.length === 0 ? (<p className='text-secondary fst-italic'>Loading...</p>) :
       combinedPlanets.map((planet, index) => (
-        <div key={index} style={{ minWidth: "300px", minHeight: "400px", marginRight: "15px" }}>
+        <div key={index} style={{ minWidth: "300px", minHeight: "500px", marginRight: "15px" }}>
           <div className="card mb-4" style={{width: 400, height: 300}}>
             <img src={`${store.planetsimg[planet.uid] || 'https://via.placeholder.com/400x200'}`} className="card-img-top" alt={planet.name} style={{ width: "100%", height: "100%", objectFit: "cover" }}/>
             <div className="card-body">
@@ -44,12 +44,12 @@ function Planets() {
                 <strong>Population:</strong> {planet.population}
               </p>
               <div className="d-flex justify-content-between">
-                <a href="#" className="btn text-light btn btn-dark fw-bolder" onClick={() => navigate(`/PlanetDetails/${planet.uid}`)}>Learn more!</a>
-                <button className={`heartbtn ${store.favorites.includes(planet.name) ? "clicked" : ""}`} onClick={() => handleClick(planet.name)}>❤</button>
+                  <button className="btn text-light btn btn-dark fw-bolder" onClick={() => navigate(`/<PlanetDetails/${planet.uid}`)}>Learn more!</button>
+                  <button className={`heartbtn ${store.favorites.includes(planet.name) ? "clicked" : ""}`} onClick={() => handleClick(planet.name)}>❤</button>
               </div>
+              </div>        
             </div>
           </div>
-        </div>
       ))}
       </div>
 

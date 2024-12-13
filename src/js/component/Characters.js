@@ -47,12 +47,7 @@ const Characters = () => {
                   <strong>Mass:</strong> {character.mass}<br />
                 </p>
                 <div className="d-flex justify-content-between">
-                  <button
-                    className="btn text-light btn btn-dark fw-bolder"
-                    onClick={() => navigate(`/CharacterDetails/${character.uid}`)}
-                  >
-                    Learn more!
-                  </button>
+                  <button className="btn text-light btn btn-dark fw-bolder" onClick={() => navigate(`/CharacterDetails/${character.uid}`)}>Learn more!</button>
                   <button className={`heartbtn ${store.favorites.includes(character.name) ? "clicked" : ""}`} onClick={() => handleClick(character.name)}>❤</button>
                 </div>
               </div>
