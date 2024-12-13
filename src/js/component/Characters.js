@@ -17,9 +17,6 @@ const Characters = () => {
     actions.updateFavorites(objectname);
   };
 
-
-
-  // Este useEffect combina los datos una vez que ambos arrays están llenos
   useEffect(() => {
     if (store.storecharacterswithProperties.length && store.storecharacterswithUid.length) {
       const combined = store.storecharacterswithUid.map(character => {

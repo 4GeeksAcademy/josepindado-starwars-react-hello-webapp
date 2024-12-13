@@ -2,7 +2,6 @@ import React,{ useEffect, useState,useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Context } from "../store/appContext";
 
-// Falta hacer el PLANETDETAILS y el useparams y todo
 function Planets() {
   const { store, actions } = useContext(Context);
   const [combinedPlanets, setCombinedPlanets] = useState([]);
@@ -28,7 +27,6 @@ function Planets() {
   function handleClick (objectname) {
     actions.updateFavorites(objectname);
   };
-
 
   return (
     <div className="container-fluid py-2 mb-3 border border-dark border-5">

@@ -20,23 +20,17 @@ function CharacterDetails() {
         </div>
         <div className="col-md-6">
           <h1 className="text-white">{store.singlecharacter ? store.singlecharacter.name : "Loading..."}</h1>
-          <p className="text-white">
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-            totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos
-            qui ratione voluptatem sequi.
-          </p>
         </div>
       </div>
 
       {store.singlecharacter && (
-        <div className="row mt-4 p-3 border-top border-danger">
-          <div className="col text-center text-warning fw-bold">Name</div>
-          <div className="col text-center text-warning fw-bold">Birth Year</div>
-          <div className="col text-center text-warning fw-bold">Gender</div>
-          <div className="col text-center text-warning fw-bold">Height</div>
-          <div className="col text-center text-warning fw-bold">Skin Color</div>
-          <div className="col text-center text-warning fw-bold">Eye Color</div>
+        <div className="row mt-4 p-3 border-top border-secondary">
+          <div className="col text-center text-secondary fw-bold">Name</div>
+          <div className="col text-center text-secondary fw-bold">Birth Year</div>
+          <div className="col text-center text-secondary fw-bold">Gender</div>
+          <div className="col text-center text-secondary fw-bold">Height</div>
+          <div className="col text-center text-secondary fw-bold">Skin Color</div>
+          <div className="col text-center text-secondary fw-bold">Eye Color</div>
         </div>
       )}
       

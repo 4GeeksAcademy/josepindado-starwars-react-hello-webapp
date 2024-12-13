@@ -19,23 +19,17 @@ const VehicleDetails = () => {
           </div>
           <div className="col-md-6">
             <h1 className="text-white">{store.vechicle ? store.vechicle.name : "Loading..."}</h1>
-            <p className="text-white">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-              totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-              Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos
-              qui ratione voluptatem sequi.
-            </p>
           </div>
         </div>
   
         {store.vechicle && (
-          <div className="row mt-4 p-3 border-top border-danger">
-            <div className="col text-center text-warning fw-bold">Name</div>
-            <div className="col text-center text-warning fw-bold">Manufacturer</div>
-            <div className="col text-center text-warning fw-bold">Model</div>
-            <div className="col text-center text-warning fw-bold">Vehicle Class</div>
-            <div className="col text-center text-warning fw-bold">Created</div>
-            <div className="col text-center text-warning fw-bold">Cargo Capacity</div>
+          <div className="row mt-4 p-3 border-top border-secondary">
+            <div className="col text-center text-secondary fw-bold">Name</div>
+            <div className="col text-center text-secondary fw-bold">Manufacturer</div>
+            <div className="col text-center text-secondary fw-bold">Model</div>
+            <div className="col text-center text-secondary fw-bold">Vehicle Class</div>
+            <div className="col text-center text-secondary fw-bold">Created</div>
+            <div className="col text-center text-secondary fw-bold">Cargo Capacity</div>
           </div>
         )}
         
