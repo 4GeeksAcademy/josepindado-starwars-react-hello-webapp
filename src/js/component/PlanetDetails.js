@@ -3,7 +3,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import { Context } from "../store/appContext";
 
 
-const PlanetDetails = () => {
+function PlanetDetails () {
     const { store, actions } = useContext(Context);
     const { id } = useParams();
 

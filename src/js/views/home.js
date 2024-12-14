@@ -7,8 +7,8 @@ import Planets from '../component/Planets';
 export const Home = () => (
   <div className="container mt-4">
     <Characters />
-    <Planets />
     <Vehicles />
+    <Planets />
     
   </div>
 );
