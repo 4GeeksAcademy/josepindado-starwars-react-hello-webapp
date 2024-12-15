@@ -36,7 +36,7 @@ function Planets() {
       combinedPlanets.map((planet, index) => (
         <div key={index} style={{ minWidth: "300px", minHeight: "500px", marginRight: "15px" }}>
           <div className="card mb-4">
-            <img src={`${store.planetsimg[planet.uid] || 'https://via.placeholder.com/400x200'}`} className="card-img-top" alt={planet.name} style={{ width: 400, height: 200}}/>
+            <img src={`${store.planetsimg[planet.uid] || 'https://via.placeholder.com/400x200'}`} className="card-img-top" alt={planet.name} style={{ width: "100%", height: 200}}/>
             <div className="card-body">
               <h5 className="card-title">{planet.name}</h5>
               <p className="card-text">

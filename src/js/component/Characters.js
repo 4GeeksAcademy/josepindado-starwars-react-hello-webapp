@@ -36,7 +36,7 @@ const Characters = () => {
         combinedCharacters.map((character, index) => (
           <div key={index} style={{ minWidth: "300px", marginRight: "15px" }}>
             <div className="card mb-4">
-              <img src={`${store.charactersimgs[character.uid] || 'https://via.placeholder.com/400x200'}`} className="card-img-top" alt={character.name} style={{width: 400, height: 200}} />
+              <img src={`${store.charactersimgs[character.uid] || 'https://via.placeholder.com/400x200'}`} className="card-img-top" alt={character.name} style={{width: "100%", height: 200}} />
               <div className="card-body">
                 <h5 className="card-title">{character.name}</h5>
                 <p className="card-text">

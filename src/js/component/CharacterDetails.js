@@ -12,6 +12,8 @@ function CharacterDetails() {
     actions.getCharacter(id);
 }, [id]);
 
+console.log(store.singlecharacter);
+
   return (
     <div className="container">
       <div className="row mt-4">
@@ -19,7 +21,7 @@ function CharacterDetails() {
           <img src={`${store.charactersimgs[id] || 'https://via.placeholder.com/800x600'}`} className="img-fluid" alt="Character" style={{width: 800, height: 300}}/>
         </div>
         <div className="col-md-6">
-          <h1 className="text-white">{store.singlecharacter ? store.singlecharacter.name : "Loading..."}</h1>
+          <h1 className="text-black">{store.singlecharacter?.name}</h1>
         </div>
       </div>
 
@@ -36,12 +38,12 @@ function CharacterDetails() {
       
       {store.singlecharacter && (
         <div className="row p-3">
-          <div className="col text-center text-white">{store.singlecharacter.name}</div>
-          <div className="col text-center text-white">{store.singlecharacter.birth_year}</div>
-          <div className="col text-center text-white">{store.singlecharacter.gender}</div>
-          <div className="col text-center text-white">{store.singlecharacter.height}</div>
-          <div className="col text-center text-white">{store.singlecharacter.skin_color}</div>
-          <div className="col text-center text-white">{store.singlecharacter.eye_color}</div>
+          <div className="col text-center text-black">{store.singlecharacter.name}</div>
+          <div className="col text-center text-black">{store.singlecharacter.birth_year}</div>
+          <div className="col text-center text-black">{store.singlecharacter.gender}</div>
+          <div className="col text-center text-black">{store.singlecharacter.height}</div>
+          <div className="col text-center text-black">{store.singlecharacter.skin_color}</div>
+          <div className="col text-center text-black">{store.singlecharacter.eye_color}</div>
         </div>
       )}
     </div>

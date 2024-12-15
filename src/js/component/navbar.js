@@ -17,7 +17,7 @@ export const Navbar = () => {
 
   return (
 		<nav className="navbar bg-black border border-dark border-5">
-    <div className="container mx-1">
+    <div className="container-fluid mx-1">
       <div className="mx-1 mb-0">
          <Link to="/">
             <img src={starWarsLogo} width="25%" alt="Star Wars Logo" className="navbar-logo" />
